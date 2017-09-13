@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>City of Portland Survey</h1>
+      <p>Hello there, citizen. The City of Portland would like to ask you a few questions about our lovely city. If you have a few minutes, please fill out this survey!</p>
+    </div>
+
+    <form id="formSurvey">
+      <div class="form-group">
+        <p><label for="citizenName">Full name:</label></p>
+        <input id="citizenName" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <p><label for="favoriteFood">Select your favorite food from the list:</label></p>
+        <select class="form-control" id="favoriteFood">
+          <option>Pizza</option>
+          <option>Thai</option>
+          <option>Vegan</option>
+          <option>Donuts</option>
+        </select>
+      </div>
+      <!-- this is for music question -->
+      <div class="radio">
+        <p><strong>Select your favorite music: </strong></p>
+        <label>
+          <input type="radio" name="favoriteMusic" value="Jazz">
+          Jazz
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="favoriteMusic" value="Pop">
+          Pop
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="favoriteMusic" value="Rock">
+          Rock
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="favoriteMusic" value="Hip-hop">
+          Hip-hop
+        </label>
+      </div>
+      <!-- this is end of music question -->
+      <button type="submit" class="btn">Submit Survey</button>
+    </form>
+
+    <div class="container" id="confirmation">
+      <h2>Survey Says:</h2>
+      <p>Your name: <span class="citizenName"></span></p>
+      <p>Favorite food: <span class="favoriteFood"></span></p>
+      <p>Favorite music: <span class="favoriteMusic"></span></p>
+
+      <p>Thanks for taking the survey!</p>
+    </div>
+  </body>
+</html>
